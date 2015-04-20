@@ -5,30 +5,18 @@
   <%= @listing.name %>
 </p>
 
-<p>
-  <strong>String:</strong>
-  <%= @listing.string %>
-</p>
 
 <p>
   <strong>Description:</strong>
   <%= @listing.description %>
 </p>
 
-<p>
-  <strong>Text:</strong>
-  <%= @listing.text %>
-</p>
 
 <p>
   <strong>Price:</strong>
   <%= @listing.price %>
 </p>
 
-<p>
-  <strong>Decimal:</strong>
-  <%= @listing.decimal %>
-</p>
 
 <%= link_to 'Edit', edit_listing_path(@listing), class: "btn btn-link" %> |
 <%= link_to 'Back', listings_path, class: "btn btn-link" %>

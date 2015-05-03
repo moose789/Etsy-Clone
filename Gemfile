@@ -23,7 +23,7 @@ gem 'jbuilder', '~> 2.0'
 
 gem 'carrierwave'
 gem 'carrierwave-dropbox'
-gem "figaro"
+gem 'figaro'
 
 group :production do
   gem 'pg'

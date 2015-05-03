@@ -1071,3 +1071,2311 @@ Started GET "/assets/application.css?body=1" for 138.238.233.11 at 2015-05-03 18
 Started GET "/assets/listings.js?body=1" for 138.238.233.11 at 2015-05-03 18:41:55 +0000
   [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
   [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/" for 138.238.233.11 at 2015-05-03 19:40:35 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ListingsController#index as HTML
+Completed 500 Internal Server Error in 22ms
+
+TypeError (wrong argument type Hash (expected Module)):
+  app/uploaders/image_uploader.rb:4:in `include'
+  app/uploaders/image_uploader.rb:4:in `<class:ImageUploader>'
+  app/uploaders/image_uploader.rb:3:in `<top (required)>'
+  app/models/listing.rb:2:in `<class:Listing>'
+  app/models/listing.rb:1:in `<top (required)>'
+  app/controllers/listings_controller.rb:7:in `index'
+
+
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (24.6ms)
+
+
+Started GET "/" for 138.238.233.11 at 2015-05-03 19:41:02 +0000
+Processing by ListingsController#index as HTML
+Completed 500 Internal Server Error in 4ms
+
+NameError (uninitialized constant ImageUploader::Carrierwave):
+  app/uploaders/image_uploader.rb:4:in `<class:ImageUploader>'
+  app/uploaders/image_uploader.rb:3:in `<top (required)>'
+  app/models/listing.rb:2:in `<class:Listing>'
+  app/models/listing.rb:1:in `<top (required)>'
+  app/controllers/listings_controller.rb:7:in `index'
+
+
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (21.0ms)
+
+
+Started GET "/" for 138.238.233.11 at 2015-05-03 19:41:33 +0000
+Processing by ListingsController#index as HTML
+  [1m[35mListing Load (0.4ms)[0m  SELECT "listings".* FROM "listings"
+  Rendered listings/index.html.erb within layouts/application (10.3ms)
+  Rendered layouts/_navbar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 112ms (Views: 106.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/custom.css?body=1" for 138.238.233.11 at 2015-05-03 19:41:33 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 138.238.233.11 at 2015-05-03 19:41:33 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 138.238.233.11 at 2015-05-03 19:41:34 +0000
+
+
+Started GET "/assets/pages.css?body=1" for 138.238.233.11 at 2015-05-03 19:41:34 +0000
+
+
+Started GET "/assets/listings.css?body=1" for 138.238.233.11 at 2015-05-03 19:41:34 +0000
+
+
+Started GET "/assets/application.css?body=1" for 138.238.233.11 at 2015-05-03 19:41:34 +0000
+
+
+Started GET "/assets/scaffolds.css?body=1" for 138.238.233.11 at 2015-05-03 19:41:34 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 138.238.233.11 at 2015-05-03 19:41:34 +0000
+
+
+Started GET "/assets/listings.js?body=1" for 138.238.233.11 at 2015-05-03 19:41:34 +0000
+
+
+Started GET "/assets/pages.js?body=1" for 138.238.233.11 at 2015-05-03 19:41:34 +0000
+
+
+Started GET "/assets/application.js?body=1" for 138.238.233.11 at 2015-05-03 19:41:34 +0000
+
+
+Started GET "/listings/1" for 138.238.233.11 at 2015-05-03 19:41:50 +0000
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mListing Load (0.4ms)[0m  [1mSELECT  "listings".* FROM "listings"  WHERE "listings"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered listings/show.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_navbar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 65ms (Views: 62.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/listings" for 138.238.233.11 at 2015-05-03 19:41:53 +0000
+Processing by ListingsController#index as HTML
+  [1m[35mListing Load (0.3ms)[0m  SELECT "listings".* FROM "listings"
+  Rendered listings/index.html.erb within layouts/application (2.6ms)
+  Rendered layouts/_navbar.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 71ms (Views: 70.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/listings/2" for 138.238.233.11 at 2015-05-03 19:41:55 +0000
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mListing Load (0.2ms)[0m  [1mSELECT  "listings".* FROM "listings"  WHERE "listings"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered listings/show.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_navbar.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 64ms (Views: 62.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/uploads/listing/image/2/Zarafrontslit2.jpg" for 138.238.233.11 at 2015-05-03 19:41:55 +0000
+
+ActionController::RoutingError (No route matches [GET] "/uploads/listing/image/2/Zarafrontslit2.jpg"):
+  actionpack (4.1.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.0) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.0) lib/rails/engine.rb:514:in `call'
+  railties (4.1.0) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/action/.parts/packages/ruby2.1/2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/action/.parts/packages/ruby2.1/2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/action/.parts/packages/ruby2.1/2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.7ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (7.6ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (35.0ms)
+
+
+Started GET "/listings" for 138.238.233.11 at 2015-05-03 19:41:59 +0000
+Processing by ListingsController#index as HTML
+  [1m[35mListing Load (0.3ms)[0m  SELECT "listings".* FROM "listings"
+  Rendered listings/index.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_navbar.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 74ms (Views: 72.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/listings/2/edit" for 138.238.233.11 at 2015-05-03 19:42:01 +0000
+Processing by ListingsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mListing Load (0.3ms)[0m  [1mSELECT  "listings".* FROM "listings"  WHERE "listings"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered listings/_form.html.erb (16.0ms)
+  Rendered listings/edit.html.erb within layouts/application (18.6ms)
+  Rendered layouts/_navbar.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 104ms (Views: 101.7ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/listings/2" for 138.238.233.11 at 2015-05-03 19:42:06 +0000
+Processing by ListingsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3lxOMEzWn1MrxqFvzGWiLdLAMCnD9JuIPl6odYTsM0k=", "listing"=>{"name"=>"Shorts", "description"=>"Yellow shorts", "price"=>"39.99", "image"=>#<ActionDispatch::Http::UploadedFile:0x007fb238422240 @tempfile=#<Tempfile:/tmp/RackMultipart20150503-5213-10z6aem>, @original_filename="Zarafrontslit2.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"listing[image]\"; filename=\"Zarafrontslit2.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Update Listing", "id"=>"2"}
+  [1m[35mListing Load (0.2ms)[0m  SELECT  "listings".* FROM "listings"  WHERE "listings"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  rollback transaction
+Completed 500 Internal Server Error in 1313ms
+
+NoMethodError (undefined method `resize_to_fl' for #<ImageUploader::Uploader70201725610380:0x007fb2383fc680>):
+  app/controllers/listings_controller.rb:44:in `block in update'
+  app/controllers/listings_controller.rb:43:in `update'
+
+
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.2ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (25.7ms)
+
+
+Started PATCH "/listings/2" for 138.238.233.11 at 2015-05-03 19:44:19 +0000
+Processing by ListingsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3lxOMEzWn1MrxqFvzGWiLdLAMCnD9JuIPl6odYTsM0k=", "listing"=>{"name"=>"Shorts", "description"=>"Yellow shorts", "price"=>"39.99", "image"=>#<ActionDispatch::Http::UploadedFile:0x007fb2371db4b0 @tempfile=#<Tempfile:/tmp/RackMultipart20150503-5213-1wcxqms>, @original_filename="Zarafrontslit2.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"listing[image]\"; filename=\"Zarafrontslit2.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Update Listing", "id"=>"2"}
+  [1m[36mListing Load (0.2ms)[0m  [1mSELECT  "listings".* FROM "listings"  WHERE "listings"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+Completed 500 Internal Server Error in 524ms
+
+NoMethodError (undefined method `resize_to_fl' for #<ImageUploader::Uploader70201725610380:0x007fb23711e298>):
+  app/controllers/listings_controller.rb:44:in `block in update'
+  app/controllers/listings_controller.rb:43:in `update'
+
+
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (24.3ms)
+
+
+Started GET "/" for 138.238.233.11 at 2015-05-03 19:44:37 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ListingsController#index as HTML
+  [1m[35mListing Load (0.3ms)[0m  SELECT "listings".* FROM "listings"
+  Rendered listings/index.html.erb within layouts/application (13.8ms)
+  Rendered layouts/_navbar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 157ms (Views: 131.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 138.238.233.11 at 2015-05-03 19:44:37 +0000
+
+
+Started GET "/assets/custom.css?body=1" for 138.238.233.11 at 2015-05-03 19:44:37 +0000
+
+
+Started GET "/assets/pages.css?body=1" for 138.238.233.11 at 2015-05-03 19:44:37 +0000
+
+
+Started GET "/assets/listings.css?body=1" for 138.238.233.11 at 2015-05-03 19:44:37 +0000
+
+
+Started GET "/assets/listings.js?body=1" for 138.238.233.11 at 2015-05-03 19:44:37 +0000
+
+
+Started GET "/assets/pages.js?body=1" for 138.238.233.11 at 2015-05-03 19:44:37 +0000
+
+
+Started GET "/assets/application.js?body=1" for 138.238.233.11 at 2015-05-03 19:44:37 +0000
+
+
+Started GET "/listings/2" for 138.238.233.11 at 2015-05-03 19:44:40 +0000
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mListing Load (0.3ms)[0m  [1mSELECT  "listings".* FROM "listings"  WHERE "listings"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered listings/show.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_navbar.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 85ms (Views: 82.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/uploads/listing/image/2/Zarafrontslit2.jpg" for 138.238.233.11 at 2015-05-03 19:44:40 +0000
+
+ActionController::RoutingError (No route matches [GET] "/uploads/listing/image/2/Zarafrontslit2.jpg"):
+  actionpack (4.1.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.0) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.0) lib/rails/engine.rb:514:in `call'
+  railties (4.1.0) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/action/.parts/packages/ruby2.1/2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/action/.parts/packages/ruby2.1/2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/action/.parts/packages/ruby2.1/2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.8ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (11.1ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (37.1ms)
+
+
+Started GET "/listings/2/edit" for 138.238.233.11 at 2015-05-03 19:44:43 +0000
+Processing by ListingsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mListing Load (0.2ms)[0m  SELECT  "listings".* FROM "listings"  WHERE "listings"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered listings/_form.html.erb (14.1ms)
+  Rendered listings/edit.html.erb within layouts/application (15.9ms)
+  Rendered layouts/_navbar.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 82ms (Views: 80.6ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/listings/2" for 138.238.233.11 at 2015-05-03 19:44:56 +0000
+Processing by ListingsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3lxOMEzWn1MrxqFvzGWiLdLAMCnD9JuIPl6odYTsM0k=", "listing"=>{"name"=>"Shorts", "description"=>"Yellow shorts", "price"=>"39.99", "image"=>#<ActionDispatch::Http::UploadedFile:0x007f05927c1bd8 @tempfile=#<Tempfile:/tmp/RackMultipart20150503-5300-hxw835>, @original_filename="Zarafrontslit2.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"listing[image]\"; filename=\"Zarafrontslit2.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Update Listing", "id"=>"2"}
+  [1m[36mListing Load (0.2ms)[0m  [1mSELECT  "listings".* FROM "listings"  WHERE "listings"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+Completed 500 Internal Server Error in 676ms
+
+NoMethodError (undefined method `resize_to_fl' for #<ImageUploader::Uploader69830960629140:0x007f0592764e88>):
+  app/controllers/listings_controller.rb:44:in `block in update'
+  app/controllers/listings_controller.rb:43:in `update'
+
+
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (23.6ms)
+
+
+Started GET "/" for 138.238.233.11 at 2015-05-03 19:47:01 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ListingsController#index as HTML
+  [1m[35mListing Load (0.3ms)[0m  SELECT "listings".* FROM "listings"
+  Rendered listings/index.html.erb within layouts/application (13.9ms)
+  Rendered layouts/_navbar.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 155ms (Views: 129.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/custom.css?body=1" for 138.238.233.11 at 2015-05-03 19:47:02 +0000
+
+
+Started GET "/assets/pages.css?body=1" for 138.238.233.11 at 2015-05-03 19:47:02 +0000
+
+
+Started GET "/assets/application.css?body=1" for 138.238.233.11 at 2015-05-03 19:47:02 +0000
+
+
+Started GET "/assets/listings.css?body=1" for 138.238.233.11 at 2015-05-03 19:47:02 +0000
+
+
+Started GET "/assets/listings.js?body=1" for 138.238.233.11 at 2015-05-03 19:47:02 +0000
+
+
+Started GET "/assets/pages.js?body=1" for 138.238.233.11 at 2015-05-03 19:47:02 +0000
+
+
+Started GET "/assets/application.js?body=1" for 138.238.233.11 at 2015-05-03 19:47:02 +0000
+
+
+Started GET "/listings/2" for 138.238.233.11 at 2015-05-03 19:47:05 +0000
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mListing Load (0.3ms)[0m  [1mSELECT  "listings".* FROM "listings"  WHERE "listings"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered listings/show.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_navbar.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 78ms (Views: 75.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/uploads/listing/image/2/Zarafrontslit2.jpg" for 138.238.233.11 at 2015-05-03 19:47:06 +0000
+
+ActionController::RoutingError (No route matches [GET] "/uploads/listing/image/2/Zarafrontslit2.jpg"):
+  actionpack (4.1.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.0) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.0) lib/rails/engine.rb:514:in `call'
+  railties (4.1.0) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/action/.parts/packages/ruby2.1/2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/action/.parts/packages/ruby2.1/2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/action/.parts/packages/ruby2.1/2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.2ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (9.0ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (35.9ms)
+
+
+Started GET "/listings" for 138.238.233.11 at 2015-05-03 19:47:09 +0000
+Processing by ListingsController#index as HTML
+  [1m[35mListing Load (0.3ms)[0m  SELECT "listings".* FROM "listings"
+  Rendered listings/index.html.erb within layouts/application (3.8ms)
+  Rendered layouts/_navbar.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 68ms (Views: 67.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/listings/2/edit" for 138.238.233.11 at 2015-05-03 19:47:11 +0000
+Processing by ListingsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mListing Load (0.2ms)[0m  [1mSELECT  "listings".* FROM "listings"  WHERE "listings"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered listings/_form.html.erb (13.3ms)
+  Rendered listings/edit.html.erb within layouts/application (15.4ms)
+  Rendered layouts/_navbar.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 81ms (Views: 79.7ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/listings/2" for 138.238.233.11 at 2015-05-03 19:47:17 +0000
+Processing by ListingsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3lxOMEzWn1MrxqFvzGWiLdLAMCnD9JuIPl6odYTsM0k=", "listing"=>{"name"=>"Shorts", "description"=>"Yellow shorts", "price"=>"39.99", "image"=>#<ActionDispatch::Http::UploadedFile:0x007fcdba028d40 @tempfile=#<Tempfile:/tmp/RackMultipart20150503-5351-1eoql3v>, @original_filename="Zarafrontslit2.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"listing[image]\"; filename=\"Zarafrontslit2.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Update Listing", "id"=>"2"}
+  [1m[35mListing Load (0.2ms)[0m  SELECT  "listings".* FROM "listings"  WHERE "listings"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mListing Load (0.3ms)[0m  SELECT  "listings".* FROM "listings"  WHERE "listings"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "listings" SET "image" = ?, "updated_at" = ? WHERE "listings"."id" = 2[0m  [["image", "Zarafrontslit2.jpg"], ["updated_at", "2015-05-03 19:47:20.495450"]]
+  [1m[35m (23.2ms)[0m  commit transaction
+Redirected to http://turbo-rascal-24-223460.use1-2.nitrousbox.com/listings/2
+Completed 302 Found in 2806ms (ActiveRecord: 24.2ms)
+
+
+Started GET "/listings/2" for 138.238.233.11 at 2015-05-03 19:47:20 +0000
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mListing Load (0.2ms)[0m  [1mSELECT  "listings".* FROM "listings"  WHERE "listings"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered listings/show.html.erb within layouts/application (3.0ms)
+  Rendered layouts/_navbar.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 73ms (Views: 71.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/listings.css?body=1" for 138.238.233.11 at 2015-05-03 19:47:21 +0000
+
+
+Started GET "/assets/pages.css?body=1" for 138.238.233.11 at 2015-05-03 19:47:21 +0000
+
+
+Started GET "/assets/application.css?body=1" for 138.238.233.11 at 2015-05-03 19:47:21 +0000
+
+
+Started GET "/assets/custom.css?body=1" for 138.238.233.11 at 2015-05-03 19:47:21 +0000
+
+
+Started GET "/assets/listings.js?body=1" for 138.238.233.11 at 2015-05-03 19:47:21 +0000
+
+
+Started GET "/assets/pages.js?body=1" for 138.238.233.11 at 2015-05-03 19:47:21 +0000
+
+
+Started GET "/assets/application.js?body=1" for 138.238.233.11 at 2015-05-03 19:47:21 +0000
+
+
+Started GET "/" for 138.238.233.11 at 2015-05-03 19:48:48 +0000
+Processing by ListingsController#index as HTML
+  [1m[35mListing Load (0.2ms)[0m  SELECT "listings".* FROM "listings"
+  Rendered listings/index.html.erb within layouts/application (4.0ms)
+  Rendered layouts/_navbar.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 88ms (Views: 87.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/listings/1" for 138.238.233.11 at 2015-05-03 19:48:58 +0000
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mListing Load (0.2ms)[0m  [1mSELECT  "listings".* FROM "listings"  WHERE "listings"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered listings/show.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_navbar.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 66ms (Views: 64.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 138.238.233.11 at 2015-05-03 19:50:11 +0000
+Processing by ListingsController#index as HTML
+  [1m[35mListing Load (0.2ms)[0m  SELECT "listings".* FROM "listings"
+  Rendered listings/index.html.erb within layouts/application (3.5ms)
+  Rendered layouts/_navbar.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 69ms (Views: 68.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/listings.css?body=1" for 138.238.233.11 at 2015-05-03 19:50:12 +0000
+
+
+Started GET "/assets/custom.css?body=1" for 138.238.233.11 at 2015-05-03 19:50:12 +0000
+
+
+Started GET "/assets/pages.css?body=1" for 138.238.233.11 at 2015-05-03 19:50:12 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 138.238.233.11 at 2015-05-03 19:50:12 +0000
+
+
+Started GET "/assets/scaffolds.css?body=1" for 138.238.233.11 at 2015-05-03 19:50:12 +0000
+
+
+Started GET "/assets/application.css?body=1" for 138.238.233.11 at 2015-05-03 19:50:12 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 138.238.233.11 at 2015-05-03 19:50:12 +0000
+
+
+Started GET "/assets/pages.js?body=1" for 138.238.233.11 at 2015-05-03 19:50:12 +0000
+
+
+Started GET "/assets/application.js?body=1" for 138.238.233.11 at 2015-05-03 19:50:12 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 138.238.233.11 at 2015-05-03 19:50:12 +0000
+
+
+Started GET "/assets/listings.js?body=1" for 138.238.233.11 at 2015-05-03 19:50:12 +0000
+
+
+Started GET "/listings/1" for 138.238.233.11 at 2015-05-03 19:50:22 +0000
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mListing Load (0.2ms)[0m  [1mSELECT  "listings".* FROM "listings"  WHERE "listings"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered listings/show.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_navbar.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 62ms (Views: 60.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/uploads/listing/image/1/medium_UOMaxi.jpg" for 138.238.233.11 at 2015-05-03 19:50:22 +0000
+
+ActionController::RoutingError (No route matches [GET] "/uploads/listing/image/1/medium_UOMaxi.jpg"):
+  actionpack (4.1.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.0) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.0) lib/rails/engine.rb:514:in `call'
+  railties (4.1.0) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/action/.parts/packages/ruby2.1/2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/action/.parts/packages/ruby2.1/2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/action/.parts/packages/ruby2.1/2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (7.5ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (31.9ms)
+
+
+Started GET "/listings" for 138.238.233.11 at 2015-05-03 19:50:26 +0000
+Processing by ListingsController#index as HTML
+  [1m[35mListing Load (0.3ms)[0m  SELECT "listings".* FROM "listings"
+  Rendered listings/index.html.erb within layouts/application (3.1ms)
+  Rendered layouts/_navbar.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 66ms (Views: 65.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/listings/2" for 138.238.233.11 at 2015-05-03 19:50:27 +0000
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mListing Load (0.2ms)[0m  [1mSELECT  "listings".* FROM "listings"  WHERE "listings"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered listings/show.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_navbar.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 61ms (Views: 59.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/listings" for 138.238.233.11 at 2015-05-03 19:50:30 +0000
+Processing by ListingsController#index as HTML
+  [1m[35mListing Load (0.3ms)[0m  SELECT "listings".* FROM "listings"
+  Rendered listings/index.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_navbar.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 60ms (Views: 59.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/listings/1" for 138.238.233.11 at 2015-05-03 19:50:31 +0000
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mListing Load (0.2ms)[0m  [1mSELECT  "listings".* FROM "listings"  WHERE "listings"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered listings/show.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_navbar.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 61ms (Views: 59.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/uploads/listing/image/1/medium_UOMaxi.jpg" for 138.238.233.11 at 2015-05-03 19:50:32 +0000
+
+ActionController::RoutingError (No route matches [GET] "/uploads/listing/image/1/medium_UOMaxi.jpg"):
+  actionpack (4.1.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.0) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.0) lib/rails/engine.rb:514:in `call'
+  railties (4.1.0) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/action/.parts/packages/ruby2.1/2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/action/.parts/packages/ruby2.1/2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/action/.parts/packages/ruby2.1/2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (7.1ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.7ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (31.9ms)
+
+
+Started GET "/listings/1/edit" for 138.238.233.11 at 2015-05-03 19:50:34 +0000
+Processing by ListingsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mListing Load (0.2ms)[0m  SELECT  "listings".* FROM "listings"  WHERE "listings"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered listings/_form.html.erb (3.4ms)
+  Rendered listings/edit.html.erb within layouts/application (4.8ms)
+  Rendered layouts/_navbar.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 65ms (Views: 63.3ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/listings/1" for 138.238.233.11 at 2015-05-03 19:50:40 +0000
+Processing by ListingsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3lxOMEzWn1MrxqFvzGWiLdLAMCnD9JuIPl6odYTsM0k=", "listing"=>{"name"=>"Dress", "description"=>"Maxi Dress", "price"=>"49.99", "image"=>#<ActionDispatch::Http::UploadedFile:0x007fcdb97b8e58 @tempfile=#<Tempfile:/tmp/RackMultipart20150503-5351-1r7p0sx>, @original_filename="UOMaxi.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"listing[image]\"; filename=\"UOMaxi.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Update Listing", "id"=>"1"}
+  [1m[36mListing Load (0.2ms)[0m  [1mSELECT  "listings".* FROM "listings"  WHERE "listings"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mListing Load (0.3ms)[0m  [1mSELECT  "listings".* FROM "listings"  WHERE "listings"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mSQL (0.4ms)[0m  UPDATE "listings" SET "image" = ?, "updated_at" = ? WHERE "listings"."id" = 1  [["image", "UOMaxi.jpg"], ["updated_at", "2015-05-03 19:50:42.355189"]]
+  [1m[36m (31.2ms)[0m  [1mcommit transaction[0m
+Redirected to http://turbo-rascal-24-223460.use1-2.nitrousbox.com/listings/1
+Completed 302 Found in 1813ms (ActiveRecord: 32.1ms)
+
+
+Started GET "/listings/1" for 138.238.233.11 at 2015-05-03 19:50:42 +0000
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mListing Load (0.2ms)[0m  SELECT  "listings".* FROM "listings"  WHERE "listings"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered listings/show.html.erb within layouts/application (2.9ms)
+  Rendered layouts/_navbar.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 89ms (Views: 86.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/custom.css?body=1" for 138.238.233.11 at 2015-05-03 19:50:42 +0000
+
+
+Started GET "/assets/listings.css?body=1" for 138.238.233.11 at 2015-05-03 19:50:42 +0000
+
+
+Started GET "/assets/pages.css?body=1" for 138.238.233.11 at 2015-05-03 19:50:42 +0000
+
+
+Started GET "/assets/application.css?body=1" for 138.238.233.11 at 2015-05-03 19:50:42 +0000
+
+
+Started GET "/assets/listings.js?body=1" for 138.238.233.11 at 2015-05-03 19:50:43 +0000
+
+
+Started GET "/assets/pages.js?body=1" for 138.238.233.11 at 2015-05-03 19:50:43 +0000
+
+
+Started GET "/assets/application.js?body=1" for 138.238.233.11 at 2015-05-03 19:50:43 +0000
+
+
+Started GET "/" for 138.238.233.11 at 2015-05-03 19:50:49 +0000
+Processing by ListingsController#index as HTML
+  [1m[36mListing Load (0.3ms)[0m  [1mSELECT "listings".* FROM "listings"[0m
+  Rendered listings/index.html.erb within layouts/application (3.0ms)
+  Rendered layouts/_navbar.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 77ms (Views: 75.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 138.238.233.11 at 2015-05-03 19:52:38 +0000
+Processing by ListingsController#index as HTML
+  [1m[35mListing Load (0.3ms)[0m  SELECT "listings".* FROM "listings"
+  Rendered listings/index.html.erb within layouts/application (3.7ms)
+  Rendered layouts/_navbar.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 77ms (Views: 75.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/custom.css?body=1" for 138.238.233.11 at 2015-05-03 19:52:39 +0000
+
+
+Started GET "/assets/scaffolds.css?body=1" for 138.238.233.11 at 2015-05-03 19:52:39 +0000
+
+
+Started GET "/assets/application.css?body=1" for 138.238.233.11 at 2015-05-03 19:52:39 +0000
+
+
+Started GET "/assets/listings.css?body=1" for 138.238.233.11 at 2015-05-03 19:52:39 +0000
+
+
+Started GET "/assets/pages.css?body=1" for 138.238.233.11 at 2015-05-03 19:52:39 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 138.238.233.11 at 2015-05-03 19:52:39 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 138.238.233.11 at 2015-05-03 19:52:39 +0000
+
+
+Started GET "/assets/pages.js?body=1" for 138.238.233.11 at 2015-05-03 19:52:39 +0000
+
+
+Started GET "/assets/listings.js?body=1" for 138.238.233.11 at 2015-05-03 19:52:39 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 138.238.233.11 at 2015-05-03 19:52:39 +0000
+
+
+Started GET "/assets/application.js?body=1" for 138.238.233.11 at 2015-05-03 19:52:39 +0000
+
+
+Started GET "/listings/index" for 138.238.233.11 at 2015-05-03 19:52:42 +0000
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"index"}
+  [1m[36mListing Load (0.1ms)[0m  [1mSELECT  "listings".* FROM "listings"  WHERE "listings"."id" = ? LIMIT 1[0m  [["id", 0]]
+Completed 404 Not Found in 1ms
+
+ActiveRecord::RecordNotFound (Couldn't find Listing with 'id'=index):
+  app/controllers/listings_controller.rb:67:in `set_listing'
+
+
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (21.2ms)
+
+
+Started GET "/listings/index" for 138.238.233.11 at 2015-05-03 19:52:43 +0000
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"index"}
+  [1m[35mListing Load (0.1ms)[0m  SELECT  "listings".* FROM "listings"  WHERE "listings"."id" = ? LIMIT 1  [["id", 0]]
+Completed 404 Not Found in 2ms
+
+ActiveRecord::RecordNotFound (Couldn't find Listing with 'id'=index):
+  app/controllers/listings_controller.rb:67:in `set_listing'
+
+
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (20.7ms)
+
+
+Started GET "/listings/index" for 138.238.233.11 at 2015-05-03 19:52:55 +0000
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"index"}
+  [1m[36mListing Load (0.1ms)[0m  [1mSELECT  "listings".* FROM "listings"  WHERE "listings"."id" = ? LIMIT 1[0m  [["id", 0]]
+Completed 404 Not Found in 1ms
+
+ActiveRecord::RecordNotFound (Couldn't find Listing with 'id'=index):
+  app/controllers/listings_controller.rb:67:in `set_listing'
+
+
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (20.4ms)
+
+
+Started GET "/listings/index" for 138.238.233.11 at 2015-05-03 19:52:55 +0000
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"index"}
+  [1m[35mListing Load (0.1ms)[0m  SELECT  "listings".* FROM "listings"  WHERE "listings"."id" = ? LIMIT 1  [["id", 0]]
+Completed 404 Not Found in 1ms
+
+ActiveRecord::RecordNotFound (Couldn't find Listing with 'id'=index):
+  app/controllers/listings_controller.rb:67:in `set_listing'
+
+
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (26.6ms)
+
+
+Started GET "/" for 138.238.233.11 at 2015-05-03 19:53:15 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ListingsController#index as HTML
+  [1m[35mListing Load (0.3ms)[0m  SELECT "listings".* FROM "listings"
+  Rendered listings/index.html.erb within layouts/application (14.9ms)
+  Rendered layouts/_navbar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 157ms (Views: 131.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/custom.css?body=1" for 138.238.233.11 at 2015-05-03 19:53:15 +0000
+
+
+Started GET "/assets/application.js?body=1" for 138.238.233.11 at 2015-05-03 19:53:15 +0000
+
+
+Started GET "/assets/application.css?body=1" for 138.238.233.11 at 2015-05-03 19:53:15 +0000
+
+
+Started GET "/assets/listings.js?body=1" for 138.238.233.11 at 2015-05-03 19:53:15 +0000
+
+
+Started GET "/assets/listings.css?body=1" for 138.238.233.11 at 2015-05-03 19:53:15 +0000
+
+
+Started GET "/assets/pages.css?body=1" for 138.238.233.11 at 2015-05-03 19:53:15 +0000
+
+
+Started GET "/assets/pages.js?body=1" for 138.238.233.11 at 2015-05-03 19:53:15 +0000
+
+
+Started GET "/" for 138.238.233.11 at 2015-05-03 19:53:18 +0000
+Processing by ListingsController#index as HTML
+  [1m[36mListing Load (0.3ms)[0m  [1mSELECT "listings".* FROM "listings"[0m
+  Rendered listings/index.html.erb within layouts/application (3.8ms)
+  Rendered layouts/_navbar.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 77ms (Views: 75.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 138.238.233.11 at 2015-05-03 19:53:19 +0000
+Processing by ListingsController#index as HTML
+  [1m[35mListing Load (0.2ms)[0m  SELECT "listings".* FROM "listings"
+  Rendered listings/index.html.erb within layouts/application (3.0ms)
+  Rendered layouts/_navbar.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 68ms (Views: 67.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 138.238.233.11 at 2015-05-03 19:53:20 +0000
+Processing by ListingsController#index as HTML
+  [1m[36mListing Load (0.3ms)[0m  [1mSELECT "listings".* FROM "listings"[0m
+  Rendered listings/index.html.erb within layouts/application (2.9ms)
+  Rendered layouts/_navbar.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 62ms (Views: 60.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/pages/about" for 138.238.233.11 at 2015-05-03 19:53:21 +0000
+Processing by PagesController#about as HTML
+  Rendered pages/about.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_navbar.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 58ms (Views: 57.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 138.238.233.11 at 2015-05-03 19:53:22 +0000
+Processing by ListingsController#index as HTML
+  [1m[35mListing Load (0.3ms)[0m  SELECT "listings".* FROM "listings"
+  Rendered listings/index.html.erb within layouts/application (2.7ms)
+  Rendered layouts/_navbar.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 62ms (Views: 61.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 138.238.233.11 at 2015-05-03 19:54:44 +0000
+Processing by ListingsController#index as HTML
+  [1m[36mListing Load (0.3ms)[0m  [1mSELECT "listings".* FROM "listings"[0m
+  Rendered listings/index.html.erb within layouts/application (14.3ms)
+Completed 500 Internal Server Error in 17ms
+
+ActionView::Template::Error (undefined local variable or method `image_taglisting' for #<#<Class:0x007f48934aa4b0>:0x007f48914b7540>):
+    14:   <tbody>
+    15:     <% @listings.each do |listing| %>
+    16:       <tr>
+    17:         <td><%= image_taglisting.image_url( :thumb) %></td>
+    18:         <td><%= listing.name %></td>
+    19:         <td><%= listing.string %></td>
+    20:         <td><%= listing.description %></td>
+  app/views/listings/index.html.erb:17:in `block in _app_views_listings_index_html_erb__2087319411504972241_69974825990220'
+  app/views/listings/index.html.erb:15:in `_app_views_listings_index_html_erb__2087319411504972241_69974825990220'
+
+
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (15.1ms)
+
+
+Started GET "/" for 138.238.233.11 at 2015-05-03 19:54:58 +0000
+Processing by ListingsController#index as HTML
+  [1m[35mListing Load (0.2ms)[0m  SELECT "listings".* FROM "listings"
+  Rendered listings/index.html.erb within layouts/application (4.5ms)
+  Rendered layouts/_navbar.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 62ms (Views: 61.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/custom.css?body=1" for 138.238.233.11 at 2015-05-03 19:54:59 +0000
+
+
+Started GET "/assets/listings.css?body=1" for 138.238.233.11 at 2015-05-03 19:54:59 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 138.238.233.11 at 2015-05-03 19:54:59 +0000
+
+
+Started GET "/assets/scaffolds.css?body=1" for 138.238.233.11 at 2015-05-03 19:54:59 +0000
+
+
+Started GET "/assets/application.css?body=1" for 138.238.233.11 at 2015-05-03 19:54:59 +0000
+
+
+Started GET "/assets/pages.css?body=1" for 138.238.233.11 at 2015-05-03 19:54:59 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 138.238.233.11 at 2015-05-03 19:54:59 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 138.238.233.11 at 2015-05-03 19:54:59 +0000
+
+
+Started GET "/assets/pages.js?body=1" for 138.238.233.11 at 2015-05-03 19:54:59 +0000
+
+
+Started GET "/assets/application.js?body=1" for 138.238.233.11 at 2015-05-03 19:54:59 +0000
+
+
+Started GET "/assets/listings.js?body=1" for 138.238.233.11 at 2015-05-03 19:54:59 +0000
+
+
+Started GET "/listings/1/edit" for 138.238.233.11 at 2015-05-03 19:55:10 +0000
+Processing by ListingsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mListing Load (0.3ms)[0m  [1mSELECT  "listings".* FROM "listings"  WHERE "listings"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered listings/_form.html.erb (19.8ms)
+  Rendered listings/edit.html.erb within layouts/application (21.6ms)
+  Rendered layouts/_navbar.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 98ms (Views: 95.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/listings/1/edit" for 138.238.233.11 at 2015-05-03 19:58:58 +0000
+Processing by ListingsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mListing Load (0.2ms)[0m  SELECT  "listings".* FROM "listings"  WHERE "listings"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered listings/_form.html.erb (3.8ms)
+  Rendered listings/edit.html.erb within layouts/application (5.5ms)
+  Rendered layouts/_navbar.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 69ms (Views: 67.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/pages.css?body=1" for 138.238.233.11 at 2015-05-03 19:58:58 +0000
+
+
+Started GET "/assets/listings.css?body=1" for 138.238.233.11 at 2015-05-03 19:58:58 +0000
+
+
+Started GET "/assets/custom.css?body=1" for 138.238.233.11 at 2015-05-03 19:58:58 +0000
+
+
+Started GET "/assets/scaffolds.css?body=1" for 138.238.233.11 at 2015-05-03 19:58:58 +0000
+
+
+Started GET "/assets/application.css?body=1" for 138.238.233.11 at 2015-05-03 19:58:58 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 138.238.233.11 at 2015-05-03 19:58:58 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 138.238.233.11 at 2015-05-03 19:58:58 +0000
+
+
+Started GET "/assets/listings.js?body=1" for 138.238.233.11 at 2015-05-03 19:58:58 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 138.238.233.11 at 2015-05-03 19:58:58 +0000
+
+
+Started GET "/assets/pages.js?body=1" for 138.238.233.11 at 2015-05-03 19:58:58 +0000
+
+
+Started GET "/assets/application.js?body=1" for 138.238.233.11 at 2015-05-03 19:58:58 +0000
+
+
+Started GET "/" for 138.238.233.11 at 2015-05-03 19:58:59 +0000
+Processing by ListingsController#index as HTML
+  [1m[36mListing Load (0.2ms)[0m  [1mSELECT "listings".* FROM "listings"[0m
+  Rendered listings/index.html.erb within layouts/application (4.7ms)
+  Rendered layouts/_navbar.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 75ms (Views: 73.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 138.238.233.11 at 2015-05-03 20:00:22 +0000
+Processing by ListingsController#index as HTML
+  [1m[35mListing Load (0.2ms)[0m  SELECT "listings".* FROM "listings"
+  Rendered listings/index.html.erb within layouts/application (4.3ms)
+  Rendered layouts/_navbar.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 66ms (Views: 65.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 138.238.233.11 at 2015-05-03 20:00:22 +0000
+
+
+Started GET "/assets/pages.css?body=1" for 138.238.233.11 at 2015-05-03 20:00:22 +0000
+
+
+Started GET "/assets/scaffolds.css?body=1" for 138.238.233.11 at 2015-05-03 20:00:22 +0000
+
+
+Started GET "/assets/listings.css?body=1" for 138.238.233.11 at 2015-05-03 20:00:22 +0000
+
+
+Started GET "/assets/application.css?body=1" for 138.238.233.11 at 2015-05-03 20:00:22 +0000
+
+
+Started GET "/assets/custom.css?body=1" for 138.238.233.11 at 2015-05-03 20:00:22 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 138.238.233.11 at 2015-05-03 20:00:23 +0000
+
+
+Started GET "/assets/listings.js?body=1" for 138.238.233.11 at 2015-05-03 20:00:23 +0000
+
+
+Started GET "/assets/pages.js?body=1" for 138.238.233.11 at 2015-05-03 20:00:23 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 138.238.233.11 at 2015-05-03 20:00:23 +0000
+
+
+Started GET "/assets/application.js?body=1" for 138.238.233.11 at 2015-05-03 20:00:23 +0000
+
+
+Started GET "/" for 138.238.233.11 at 2015-05-03 20:04:43 +0000
+Processing by ListingsController#index as HTML
+  Rendered listings/index.html.erb within layouts/application (0.8ms)
+Completed 500 Internal Server Error in 3ms
+
+SyntaxError (/home/action/workspace/Etsy-Clone/app/views/listings/index.html.erb:15: syntax error, unexpected keyword_end, expecting ')'
+'.freeze;     end 
+                 ^
+/home/action/workspace/Etsy-Clone/app/views/listings/index.html.erb:24: syntax error, unexpected keyword_ensure, expecting ')'
+/home/action/workspace/Etsy-Clone/app/views/listings/index.html.erb:26: syntax error, unexpected keyword_end, expecting ')'):
+  actionview (4.1.0) lib/action_view/template.rb:297:in `module_eval'
+  actionview (4.1.0) lib/action_view/template.rb:297:in `compile'
+  actionview (4.1.0) lib/action_view/template.rb:245:in `block (2 levels) in compile!'
+  activesupport (4.1.0) lib/active_support/notifications.rb:161:in `instrument'
+  actionview (4.1.0) lib/action_view/template.rb:339:in `instrument'
+  actionview (4.1.0) lib/action_view/template.rb:244:in `block in compile!'
+  actionview (4.1.0) lib/action_view/template.rb:232:in `synchronize'
+  actionview (4.1.0) lib/action_view/template.rb:232:in `compile!'
+  actionview (4.1.0) lib/action_view/template.rb:144:in `block in render'
+  activesupport (4.1.0) lib/active_support/notifications.rb:161:in `instrument'
+  actionview (4.1.0) lib/action_view/template.rb:339:in `instrument'
+  actionview (4.1.0) lib/action_view/template.rb:143:in `render'
+  actionview (4.1.0) lib/action_view/renderer/template_renderer.rb:55:in `block (2 levels) in render_template'
+  actionview (4.1.0) lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+  activesupport (4.1.0) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.0) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.0) lib/active_support/notifications.rb:159:in `instrument'
+  actionview (4.1.0) lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+  actionview (4.1.0) lib/action_view/renderer/template_renderer.rb:54:in `block in render_template'
+  actionview (4.1.0) lib/action_view/renderer/template_renderer.rb:62:in `render_with_layout'
+  actionview (4.1.0) lib/action_view/renderer/template_renderer.rb:53:in `render_template'
+  actionview (4.1.0) lib/action_view/renderer/template_renderer.rb:17:in `render'
+  actionview (4.1.0) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.1.0) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.1.0) lib/action_view/rendering.rb:99:in `_render_template'
+  actionpack (4.1.0) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.1.0) lib/action_view/rendering.rb:82:in `render_to_body'
+  actionpack (4.1.0) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.1.0) lib/action_controller/metal/renderers.rb:32:in `render_to_body'
+  actionpack (4.1.0) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.1.0) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.1.0) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.1.0) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /home/action/.parts/packages/ruby2.1/2.1.1/lib/ruby/2.1.0/benchmark.rb:294:in `realtime'
+  activesupport (4.1.0) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.1.0) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.1.0) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.1.0) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.1.0) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.1.0) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.1.0) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.1.0) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.1.0) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.1.0) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.1.0) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.0) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.0) lib/active_support/callbacks.rb:149:in `block in halting_and_conditional'
+  activesupport (4.1.0) lib/active_support/callbacks.rb:229:in `call'
+  activesupport (4.1.0) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.0) lib/active_support/callbacks.rb:229:in `call'
+  activesupport (4.1.0) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.0) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.0) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.0) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.0) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.0) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.0) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.0) lib/active_support/callbacks.rb:86:in `call'
+  activesupport (4.1.0) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.0) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.0) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.0) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.0) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.0) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.0) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.0) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.0) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.0) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.0) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.0) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.0) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.1.0) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.0) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.1.0) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.1.0) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.1.0) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.1.0) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.0) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.0) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.0) lib/action_dispatch/routing/route_set.rb:676:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.0) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.0) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.0) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.0) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.0) lib/rails/engine.rb:514:in `call'
+  railties (4.1.0) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/action/.parts/packages/ruby2.1/2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/action/.parts/packages/ruby2.1/2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/action/.parts/packages/ruby2.1/2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (20.5ms)
+
+
+Started GET "/" for 138.238.233.11 at 2015-05-03 20:05:39 +0000
+Processing by ListingsController#index as HTML
+  [1m[36mListing Load (0.2ms)[0m  [1mSELECT "listings".* FROM "listings"[0m
+  Rendered listings/index.html.erb within layouts/application (4.6ms)
+  Rendered layouts/_navbar.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 66ms (Views: 64.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/custom.css?body=1" for 138.238.233.11 at 2015-05-03 20:05:39 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 138.238.233.11 at 2015-05-03 20:05:39 +0000
+
+
+Started GET "/assets/application.css?body=1" for 138.238.233.11 at 2015-05-03 20:05:39 +0000
+
+
+Started GET "/assets/scaffolds.css?body=1" for 138.238.233.11 at 2015-05-03 20:05:39 +0000
+
+
+Started GET "/assets/listings.css?body=1" for 138.238.233.11 at 2015-05-03 20:05:39 +0000
+
+
+Started GET "/assets/pages.css?body=1" for 138.238.233.11 at 2015-05-03 20:05:39 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 138.238.233.11 at 2015-05-03 20:05:40 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 138.238.233.11 at 2015-05-03 20:05:40 +0000
+
+
+Started GET "/assets/listings.js?body=1" for 138.238.233.11 at 2015-05-03 20:05:40 +0000
+
+
+Started GET "/assets/application.js?body=1" for 138.238.233.11 at 2015-05-03 20:05:40 +0000
+
+
+Started GET "/assets/pages.js?body=1" for 138.238.233.11 at 2015-05-03 20:05:40 +0000
+
+
+Started GET "/" for 138.238.233.11 at 2015-05-03 20:07:43 +0000
+Processing by ListingsController#index as HTML
+  [1m[35mListing Load (0.2ms)[0m  SELECT "listings".* FROM "listings"
+  Rendered listings/index.html.erb within layouts/application (4.2ms)
+  Rendered layouts/_navbar.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 70ms (Views: 68.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/custom.css?body=1" for 138.238.233.11 at 2015-05-03 20:07:44 +0000
+
+
+Started GET "/assets/pages.css?body=1" for 138.238.233.11 at 2015-05-03 20:07:44 +0000
+
+
+Started GET "/assets/listings.css?body=1" for 138.238.233.11 at 2015-05-03 20:07:44 +0000
+
+
+Started GET "/assets/scaffolds.css?body=1" for 138.238.233.11 at 2015-05-03 20:07:44 +0000
+
+
+Started GET "/assets/application.css?body=1" for 138.238.233.11 at 2015-05-03 20:07:44 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 138.238.233.11 at 2015-05-03 20:07:44 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 138.238.233.11 at 2015-05-03 20:07:44 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 138.238.233.11 at 2015-05-03 20:07:44 +0000
+
+
+Started GET "/assets/pages.js?body=1" for 138.238.233.11 at 2015-05-03 20:07:44 +0000
+
+
+Started GET "/assets/listings.js?body=1" for 138.238.233.11 at 2015-05-03 20:07:44 +0000
+
+
+Started GET "/assets/application.js?body=1" for 138.238.233.11 at 2015-05-03 20:07:44 +0000
+
+
+Started GET "/" for 138.238.233.11 at 2015-05-03 20:08:37 +0000
+Processing by ListingsController#index as HTML
+  [1m[36mListing Load (0.3ms)[0m  [1mSELECT "listings".* FROM "listings"[0m
+  Rendered listings/index.html.erb within layouts/application (4.4ms)
+  Rendered layouts/_navbar.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 65ms (Views: 63.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/custom.css?body=1" for 138.238.233.11 at 2015-05-03 20:08:37 +0000
+
+
+Started GET "/assets/pages.css?body=1" for 138.238.233.11 at 2015-05-03 20:08:37 +0000
+
+
+Started GET "/assets/scaffolds.css?body=1" for 138.238.233.11 at 2015-05-03 20:08:37 +0000
+
+
+Started GET "/assets/listings.css?body=1" for 138.238.233.11 at 2015-05-03 20:08:37 +0000
+
+
+Started GET "/assets/application.css?body=1" for 138.238.233.11 at 2015-05-03 20:08:37 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 138.238.233.11 at 2015-05-03 20:08:37 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 138.238.233.11 at 2015-05-03 20:08:37 +0000
+
+
+Started GET "/assets/listings.js?body=1" for 138.238.233.11 at 2015-05-03 20:08:37 +0000
+
+
+Started GET "/assets/pages.js?body=1" for 138.238.233.11 at 2015-05-03 20:08:37 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 138.238.233.11 at 2015-05-03 20:08:37 +0000
+
+
+Started GET "/assets/application.js?body=1" for 138.238.233.11 at 2015-05-03 20:08:37 +0000
+
+
+Started GET "/listings/new" for 138.238.233.11 at 2015-05-03 20:09:35 +0000
+Processing by ListingsController#new as HTML
+  Rendered listings/_form.html.erb (2.7ms)
+  Rendered listings/new.html.erb within layouts/application (4.3ms)
+  Rendered layouts/_navbar.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 66ms (Views: 64.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/listings" for 138.238.233.11 at 2015-05-03 20:10:01 +0000
+Processing by ListingsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3lxOMEzWn1MrxqFvzGWiLdLAMCnD9JuIPl6odYTsM0k=", "listing"=>{"name"=>"Romper", "description"=>"Floral Pattern", "price"=>"35.99", "image"=>#<ActionDispatch::Http::UploadedFile:0x007f48935806a0 @tempfile=#<Tempfile:/tmp/RackMultipart20150503-5577-syip3s>, @original_filename="FloralRomperUO2.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"listing[image]\"; filename=\"FloralRomperUO2.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Create Listing"}
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "listings" ("created_at", "description", "image", "name", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", "2015-05-03 20:10:04.120112"], ["description", "Floral Pattern"], ["image", "FloralRomperUO2.jpg"], ["name", "Romper"], ["price", "35.99"], ["updated_at", "2015-05-03 20:10:04.120112"]]
+  [1m[35m (42.6ms)[0m  commit transaction
+Redirected to http://turbo-rascal-24-223460.use1-2.nitrousbox.com/listings/3
+Completed 302 Found in 2561ms (ActiveRecord: 43.6ms)
+
+
+Started GET "/listings/3" for 138.238.233.11 at 2015-05-03 20:10:04 +0000
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mListing Load (0.2ms)[0m  [1mSELECT  "listings".* FROM "listings"  WHERE "listings"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered listings/show.html.erb within layouts/application (3.0ms)
+  Rendered layouts/_navbar.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 100ms (Views: 97.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/custom.css?body=1" for 138.238.233.11 at 2015-05-03 20:10:04 +0000
+
+
+Started GET "/assets/application.css?body=1" for 138.238.233.11 at 2015-05-03 20:10:04 +0000
+
+
+Started GET "/assets/application.js?body=1" for 138.238.233.11 at 2015-05-03 20:10:04 +0000
+
+
+Started GET "/assets/listings.css?body=1" for 138.238.233.11 at 2015-05-03 20:10:04 +0000
+
+
+Started GET "/assets/pages.css?body=1" for 138.238.233.11 at 2015-05-03 20:10:04 +0000
+
+
+Started GET "/assets/listings.js?body=1" for 138.238.233.11 at 2015-05-03 20:10:04 +0000
+
+
+Started GET "/assets/pages.js?body=1" for 138.238.233.11 at 2015-05-03 20:10:04 +0000
+
+
+Started GET "/listings" for 138.238.233.11 at 2015-05-03 20:10:11 +0000
+Processing by ListingsController#index as HTML
+  [1m[35mListing Load (0.3ms)[0m  SELECT "listings".* FROM "listings"
+  Rendered listings/index.html.erb within layouts/application (5.5ms)
+  Rendered layouts/_navbar.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 73ms (Views: 71.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/listings/new" for 138.238.233.11 at 2015-05-03 20:10:15 +0000
+Processing by ListingsController#new as HTML
+  Rendered listings/_form.html.erb (3.4ms)
+  Rendered listings/new.html.erb within layouts/application (4.6ms)
+  Rendered layouts/_navbar.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 75ms (Views: 74.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/listings" for 138.238.233.11 at 2015-05-03 20:10:34 +0000
+Processing by ListingsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3lxOMEzWn1MrxqFvzGWiLdLAMCnD9JuIPl6odYTsM0k=", "listing"=>{"name"=>"Pants", "description"=>"Chiffon", "price"=>"29.99", "image"=>#<ActionDispatch::Http::UploadedFile:0x007f4893be6e18 @tempfile=#<Tempfile:/tmp/RackMultipart20150503-5577-m3m57n>, @original_filename="F21Chiffon.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"listing[image]\"; filename=\"F21Chiffon.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Create Listing"}
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "listings" ("created_at", "description", "image", "name", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", "2015-05-03 20:10:36.358606"], ["description", "Chiffon"], ["image", "F21Chiffon.jpg"], ["name", "Pants"], ["price", "29.99"], ["updated_at", "2015-05-03 20:10:36.358606"]]
+  [1m[36m (35.2ms)[0m  [1mcommit transaction[0m
+Redirected to http://turbo-rascal-24-223460.use1-2.nitrousbox.com/listings/4
+Completed 302 Found in 1802ms (ActiveRecord: 36.0ms)
+
+
+Started GET "/listings/4" for 138.238.233.11 at 2015-05-03 20:10:36 +0000
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mListing Load (0.2ms)[0m  SELECT  "listings".* FROM "listings"  WHERE "listings"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered listings/show.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_navbar.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 72ms (Views: 70.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/custom.css?body=1" for 138.238.233.11 at 2015-05-03 20:10:36 +0000
+
+
+Started GET "/assets/pages.css?body=1" for 138.238.233.11 at 2015-05-03 20:10:36 +0000
+
+
+Started GET "/assets/listings.css?body=1" for 138.238.233.11 at 2015-05-03 20:10:36 +0000
+
+
+Started GET "/assets/application.css?body=1" for 138.238.233.11 at 2015-05-03 20:10:36 +0000
+
+
+Started GET "/assets/listings.js?body=1" for 138.238.233.11 at 2015-05-03 20:10:37 +0000
+
+
+Started GET "/assets/pages.js?body=1" for 138.238.233.11 at 2015-05-03 20:10:37 +0000
+
+
+Started GET "/assets/application.js?body=1" for 138.238.233.11 at 2015-05-03 20:10:37 +0000
+
+
+Started GET "/listings" for 138.238.233.11 at 2015-05-03 20:10:40 +0000
+Processing by ListingsController#index as HTML
+  [1m[36mListing Load (0.3ms)[0m  [1mSELECT "listings".* FROM "listings"[0m
+  Rendered listings/index.html.erb within layouts/application (12.5ms)
+  Rendered layouts/_navbar.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 82ms (Views: 80.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/listings/new" for 138.238.233.11 at 2015-05-03 20:10:50 +0000
+Processing by ListingsController#new as HTML
+  Rendered listings/_form.html.erb (3.2ms)
+  Rendered listings/new.html.erb within layouts/application (4.4ms)
+  Rendered layouts/_navbar.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 77ms (Views: 76.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/listings" for 138.238.233.11 at 2015-05-03 20:11:10 +0000
+Processing by ListingsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3lxOMEzWn1MrxqFvzGWiLdLAMCnD9JuIPl6odYTsM0k=", "listing"=>{"name"=>"Pants", "description"=>"Skinny", "price"=>"30.99", "image"=>#<ActionDispatch::Http::UploadedFile:0x007f48942f4610 @tempfile=#<Tempfile:/tmp/RackMultipart20150503-5577-1tp5ndk>, @original_filename="HMskinny.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"listing[image]\"; filename=\"HMskinny.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Create Listing"}
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "listings" ("created_at", "description", "image", "name", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", "2015-05-03 20:11:12.405714"], ["description", "Skinny"], ["image", "HMskinny.jpg"], ["name", "Pants"], ["price", "30.99"], ["updated_at", "2015-05-03 20:11:12.405714"]]
+  [1m[35m (34.6ms)[0m  commit transaction
+Redirected to http://turbo-rascal-24-223460.use1-2.nitrousbox.com/listings/5
+Completed 302 Found in 1886ms (ActiveRecord: 35.3ms)
+
+
+Started GET "/listings/5" for 138.238.233.11 at 2015-05-03 20:11:12 +0000
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mListing Load (0.2ms)[0m  [1mSELECT  "listings".* FROM "listings"  WHERE "listings"."id" = ? LIMIT 1[0m  [["id", 5]]
+  Rendered listings/show.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_navbar.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 308ms (Views: 306.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/custom.css?body=1" for 138.238.233.11 at 2015-05-03 20:11:13 +0000
+
+
+Started GET "/assets/listings.css?body=1" for 138.238.233.11 at 2015-05-03 20:11:13 +0000
+
+
+Started GET "/assets/listings.js?body=1" for 138.238.233.11 at 2015-05-03 20:11:13 +0000
+
+
+Started GET "/assets/pages.css?body=1" for 138.238.233.11 at 2015-05-03 20:11:13 +0000
+
+
+Started GET "/assets/application.css?body=1" for 138.238.233.11 at 2015-05-03 20:11:13 +0000
+
+
+Started GET "/assets/application.js?body=1" for 138.238.233.11 at 2015-05-03 20:11:13 +0000
+
+
+Started GET "/assets/pages.js?body=1" for 138.238.233.11 at 2015-05-03 20:11:13 +0000
+
+
+Started GET "/listings" for 138.238.233.11 at 2015-05-03 20:11:17 +0000
+Processing by ListingsController#index as HTML
+  [1m[35mListing Load (0.3ms)[0m  SELECT "listings".* FROM "listings"
+  Rendered listings/index.html.erb within layouts/application (7.9ms)
+  Rendered layouts/_navbar.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 85ms (Views: 84.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/listings" for 138.238.233.11 at 2015-05-03 20:13:14 +0000
+Processing by ListingsController#index as HTML
+  [1m[36mListing Load (0.3ms)[0m  [1mSELECT "listings".* FROM "listings"[0m
+  Rendered listings/index.html.erb within layouts/application (7.9ms)
+  Rendered layouts/_navbar.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 73ms (Views: 71.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/custom.css?body=1" for 138.238.233.11 at 2015-05-03 20:13:14 +0000
+
+
+Started GET "/assets/listings.css?body=1" for 138.238.233.11 at 2015-05-03 20:13:14 +0000
+
+
+Started GET "/assets/pages.css?body=1" for 138.238.233.11 at 2015-05-03 20:13:14 +0000
+
+
+Started GET "/assets/application.css?body=1" for 138.238.233.11 at 2015-05-03 20:13:14 +0000
+
+
+Started GET "/assets/scaffolds.css?body=1" for 138.238.233.11 at 2015-05-03 20:13:14 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 138.238.233.11 at 2015-05-03 20:13:14 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 138.238.233.11 at 2015-05-03 20:13:14 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 138.238.233.11 at 2015-05-03 20:13:14 +0000
+
+
+Started GET "/assets/listings.js?body=1" for 138.238.233.11 at 2015-05-03 20:13:14 +0000
+
+
+Started GET "/assets/pages.js?body=1" for 138.238.233.11 at 2015-05-03 20:13:14 +0000
+
+
+Started GET "/assets/application.js?body=1" for 138.238.233.11 at 2015-05-03 20:13:14 +0000
+
+
+Started GET "/listings/1" for 138.238.233.11 at 2015-05-03 20:13:17 +0000
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mListing Load (0.2ms)[0m  SELECT  "listings".* FROM "listings"  WHERE "listings"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered listings/show.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_navbar.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 77ms (Views: 75.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/listings/1" for 138.238.233.11 at 2015-05-03 20:13:36 +0000
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mListing Load (0.2ms)[0m  [1mSELECT  "listings".* FROM "listings"  WHERE "listings"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered listings/show.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_navbar.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 68ms (Views: 66.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/custom.css?body=1" for 138.238.233.11 at 2015-05-03 20:13:36 +0000
+
+
+Started GET "/assets/listings.css?body=1" for 138.238.233.11 at 2015-05-03 20:13:36 +0000
+
+
+Started GET "/assets/scaffolds.css?body=1" for 138.238.233.11 at 2015-05-03 20:13:36 +0000
+
+
+Started GET "/assets/pages.css?body=1" for 138.238.233.11 at 2015-05-03 20:13:36 +0000
+
+
+Started GET "/assets/application.css?body=1" for 138.238.233.11 at 2015-05-03 20:13:36 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 138.238.233.11 at 2015-05-03 20:13:36 +0000
+
+
+Started GET "/assets/application.js?body=1" for 138.238.233.11 at 2015-05-03 20:13:37 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 138.238.233.11 at 2015-05-03 20:13:37 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 138.238.233.11 at 2015-05-03 20:13:37 +0000
+
+
+Started GET "/assets/listings.js?body=1" for 138.238.233.11 at 2015-05-03 20:13:37 +0000
+
+
+Started GET "/assets/pages.js?body=1" for 138.238.233.11 at 2015-05-03 20:13:37 +0000
+
+
+Started GET "/listings/1" for 138.238.233.11 at 2015-05-03 20:15:31 +0000
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mListing Load (0.2ms)[0m  SELECT  "listings".* FROM "listings"  WHERE "listings"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered listings/show.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_navbar.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 61ms (Views: 59.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/custom.css?body=1" for 138.238.233.11 at 2015-05-03 20:15:31 +0000
+
+
+Started GET "/assets/listings.css?body=1" for 138.238.233.11 at 2015-05-03 20:15:31 +0000
+
+
+Started GET "/assets/pages.css?body=1" for 138.238.233.11 at 2015-05-03 20:15:31 +0000
+
+
+Started GET "/assets/scaffolds.css?body=1" for 138.238.233.11 at 2015-05-03 20:15:31 +0000
+
+
+Started GET "/assets/application.css?body=1" for 138.238.233.11 at 2015-05-03 20:15:31 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 138.238.233.11 at 2015-05-03 20:15:31 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 138.238.233.11 at 2015-05-03 20:15:31 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 138.238.233.11 at 2015-05-03 20:15:31 +0000
+
+
+Started GET "/assets/listings.js?body=1" for 138.238.233.11 at 2015-05-03 20:15:31 +0000
+
+
+Started GET "/assets/pages.js?body=1" for 138.238.233.11 at 2015-05-03 20:15:31 +0000
+
+
+Started GET "/assets/application.js?body=1" for 138.238.233.11 at 2015-05-03 20:15:31 +0000
+
+
+Started GET "/listings/1" for 138.238.233.11 at 2015-05-03 20:16:36 +0000
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mListing Load (0.2ms)[0m  [1mSELECT  "listings".* FROM "listings"  WHERE "listings"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered listings/show.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_navbar.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 69ms (Views: 67.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/listings.css?body=1" for 138.238.233.11 at 2015-05-03 20:16:36 +0000
+
+
+Started GET "/assets/custom.css?body=1" for 138.238.233.11 at 2015-05-03 20:16:37 +0000
+
+
+Started GET "/assets/pages.css?body=1" for 138.238.233.11 at 2015-05-03 20:16:37 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 138.238.233.11 at 2015-05-03 20:16:37 +0000
+
+
+Started GET "/assets/scaffolds.css?body=1" for 138.238.233.11 at 2015-05-03 20:16:37 +0000
+
+
+Started GET "/assets/application.css?body=1" for 138.238.233.11 at 2015-05-03 20:16:37 +0000
+
+
+Started GET "/assets/pages.js?body=1" for 138.238.233.11 at 2015-05-03 20:16:37 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 138.238.233.11 at 2015-05-03 20:16:37 +0000
+
+
+Started GET "/assets/application.js?body=1" for 138.238.233.11 at 2015-05-03 20:16:37 +0000
+
+
+Started GET "/assets/listings.js?body=1" for 138.238.233.11 at 2015-05-03 20:16:37 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 138.238.233.11 at 2015-05-03 20:16:37 +0000
+
+
+Started GET "/" for 138.238.233.11 at 2015-05-03 20:16:58 +0000
+Processing by ListingsController#index as HTML
+  [1m[35mListing Load (0.3ms)[0m  SELECT "listings".* FROM "listings"
+  Rendered listings/index.html.erb within layouts/application (16.5ms)
+  Rendered layouts/_navbar.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 76ms (Views: 75.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 138.238.233.11 at 2015-05-03 20:17:43 +0000
+Processing by ListingsController#index as HTML
+  [1m[36mListing Load (0.3ms)[0m  [1mSELECT "listings".* FROM "listings"[0m
+  Rendered listings/index.html.erb within layouts/application (8.8ms)
+  Rendered layouts/_navbar.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 68ms (Views: 66.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/listings.css?body=1" for 138.238.233.11 at 2015-05-03 20:17:44 +0000
+
+
+Started GET "/assets/custom.css?body=1" for 138.238.233.11 at 2015-05-03 20:17:44 +0000
+
+
+Started GET "/assets/pages.css?body=1" for 138.238.233.11 at 2015-05-03 20:17:44 +0000
+
+
+Started GET "/assets/scaffolds.css?body=1" for 138.238.233.11 at 2015-05-03 20:17:44 +0000
+
+
+Started GET "/assets/application.css?body=1" for 138.238.233.11 at 2015-05-03 20:17:44 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 138.238.233.11 at 2015-05-03 20:17:44 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 138.238.233.11 at 2015-05-03 20:17:44 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 138.238.233.11 at 2015-05-03 20:17:44 +0000
+
+
+Started GET "/assets/listings.js?body=1" for 138.238.233.11 at 2015-05-03 20:17:44 +0000
+
+
+Started GET "/assets/pages.js?body=1" for 138.238.233.11 at 2015-05-03 20:17:44 +0000
+
+
+Started GET "/assets/application.js?body=1" for 138.238.233.11 at 2015-05-03 20:17:44 +0000
+
+
+Started GET "/listings/1" for 138.238.233.11 at 2015-05-03 20:17:46 +0000
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mListing Load (0.2ms)[0m  SELECT  "listings".* FROM "listings"  WHERE "listings"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered listings/show.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_navbar.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 74ms (Views: 72.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 138.238.233.11 at 2015-05-03 20:21:03 +0000
+Processing by ListingsController#index as HTML
+  [1m[36mListing Load (0.3ms)[0m  [1mSELECT "listings".* FROM "listings"[0m
+  Rendered listings/index.html.erb within layouts/application (8.0ms)
+  Rendered layouts/_navbar.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 96ms (Views: 94.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 138.238.233.11 at 2015-05-03 20:21:03 +0000
+Processing by ListingsController#index as HTML
+  [1m[35mListing Load (0.3ms)[0m  SELECT "listings".* FROM "listings"
+  Rendered listings/index.html.erb within layouts/application (8.7ms)
+  Rendered layouts/_navbar.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 70ms (Views: 68.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/custom.css?body=1" for 138.238.233.11 at 2015-05-03 20:21:03 +0000
+
+
+Started GET "/assets/listings.css?body=1" for 138.238.233.11 at 2015-05-03 20:21:03 +0000
+
+
+Started GET "/assets/pages.css?body=1" for 138.238.233.11 at 2015-05-03 20:21:03 +0000
+
+
+Started GET "/assets/application.js?body=1" for 138.238.233.11 at 2015-05-03 20:21:03 +0000
+
+
+Started GET "/assets/pages.js?body=1" for 138.238.233.11 at 2015-05-03 20:21:03 +0000
+
+
+Started GET "/assets/application.css?body=1" for 138.238.233.11 at 2015-05-03 20:21:03 +0000
+
+
+Started GET "/assets/listings.js?body=1" for 138.238.233.11 at 2015-05-03 20:21:03 +0000
+
+
+Started GET "/" for 138.238.233.11 at 2015-05-03 20:21:05 +0000
+Processing by ListingsController#index as HTML
+  [1m[36mListing Load (0.3ms)[0m  [1mSELECT "listings".* FROM "listings"[0m
+  Rendered listings/index.html.erb within layouts/application (8.1ms)
+  Rendered layouts/_navbar.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 67ms (Views: 65.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/pages.css?body=1" for 138.238.233.11 at 2015-05-03 20:21:05 +0000
+
+
+Started GET "/assets/application.css?body=1" for 138.238.233.11 at 2015-05-03 20:21:05 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 138.238.233.11 at 2015-05-03 20:21:05 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 138.238.233.11 at 2015-05-03 20:21:05 +0000
+
+
+Started GET "/assets/custom.css?body=1" for 138.238.233.11 at 2015-05-03 20:21:05 +0000
+
+
+Started GET "/assets/listings.css?body=1" for 138.238.233.11 at 2015-05-03 20:21:05 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 138.238.233.11 at 2015-05-03 20:21:06 +0000
+
+
+Started GET "/assets/listings.js?body=1" for 138.238.233.11 at 2015-05-03 20:21:06 +0000
+
+
+Started GET "/assets/pages.js?body=1" for 138.238.233.11 at 2015-05-03 20:21:06 +0000
+
+
+Started GET "/assets/application.js?body=1" for 138.238.233.11 at 2015-05-03 20:21:06 +0000
+
+
+Started GET "/" for 138.238.233.11 at 2015-05-03 20:28:03 +0000
+Processing by ListingsController#index as HTML
+  [1m[35mListing Load (0.3ms)[0m  SELECT "listings".* FROM "listings"
+  Rendered listings/index.html.erb within layouts/application (7.9ms)
+Completed 500 Internal Server Error in 17ms
+
+ActionView::Template::Error (Invalid CSS after "    font size:": expected pseudoclass or pseudoelement, was " 14px;"
+  (in /home/action/workspace/Etsy-Clone/app/assets/stylesheets/custom.css.scss:20)):
+     7: 
+     8: <!-- Optional theme -->
+     9: <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    10:  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    11:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    12:   <%= csrf_meta_tags %>
+    13: </head>
+  app/assets/stylesheets/custom.css.scss:20
+  app/views/layouts/application.html.erb:10:in `_app_views_layouts_application_html_erb___3903080115132127677_69974837345040'
+
+
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (15.4ms)
+
+
+Started GET "/" for 138.238.233.11 at 2015-05-03 20:29:42 +0000
+Processing by ListingsController#index as HTML
+  [1m[36mListing Load (0.3ms)[0m  [1mSELECT "listings".* FROM "listings"[0m
+  Rendered listings/index.html.erb within layouts/application (10.0ms)
+  Rendered layouts/_navbar.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 95ms (Views: 93.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/custom.css?body=1" for 138.238.233.11 at 2015-05-03 20:29:42 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 138.238.233.11 at 2015-05-03 20:29:42 +0000
+
+
+Started GET "/assets/listings.js?body=1" for 138.238.233.11 at 2015-05-03 20:29:42 +0000
+
+
+Started GET "/assets/listings.css?body=1" for 138.238.233.11 at 2015-05-03 20:29:42 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 138.238.233.11 at 2015-05-03 20:29:42 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 138.238.233.11 at 2015-05-03 20:29:42 +0000
+
+
+Started GET "/assets/application.css?body=1" for 138.238.233.11 at 2015-05-03 20:29:42 +0000
+
+
+Started GET "/assets/pages.css?body=1" for 138.238.233.11 at 2015-05-03 20:29:42 +0000
+
+
+Started GET "/assets/pages.js?body=1" for 138.238.233.11 at 2015-05-03 20:29:42 +0000
+
+
+Started GET "/assets/application.js?body=1" for 138.238.233.11 at 2015-05-03 20:29:43 +0000
+
+
+Started GET "/" for 138.238.233.11 at 2015-05-03 20:31:25 +0000
+Processing by ListingsController#index as HTML
+  [1m[35mListing Load (0.2ms)[0m  SELECT "listings".* FROM "listings"
+  Rendered listings/index.html.erb within layouts/application (7.9ms)
+  Rendered layouts/_navbar.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 87ms (Views: 86.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/custom.css?body=1" for 138.238.233.11 at 2015-05-03 20:31:25 +0000
+
+
+Started GET "/assets/listings.css?body=1" for 138.238.233.11 at 2015-05-03 20:31:25 +0000
+
+
+Started GET "/assets/pages.css?body=1" for 138.238.233.11 at 2015-05-03 20:31:25 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 138.238.233.11 at 2015-05-03 20:31:25 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 138.238.233.11 at 2015-05-03 20:31:25 +0000
+
+
+Started GET "/assets/application.css?body=1" for 138.238.233.11 at 2015-05-03 20:31:25 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 138.238.233.11 at 2015-05-03 20:31:25 +0000
+
+
+Started GET "/assets/listings.js?body=1" for 138.238.233.11 at 2015-05-03 20:31:25 +0000
+
+
+Started GET "/assets/pages.js?body=1" for 138.238.233.11 at 2015-05-03 20:31:25 +0000
+
+
+Started GET "/assets/application.js?body=1" for 138.238.233.11 at 2015-05-03 20:31:25 +0000
+
+
+Started GET "/" for 138.238.233.11 at 2015-05-03 20:31:35 +0000
+Processing by ListingsController#index as HTML
+  [1m[36mListing Load (0.3ms)[0m  [1mSELECT "listings".* FROM "listings"[0m
+  Rendered listings/index.html.erb within layouts/application (9.4ms)
+  Rendered layouts/_navbar.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 89ms (Views: 88.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/custom.css?body=1" for 138.238.233.11 at 2015-05-03 20:31:35 +0000
+
+
+Started GET "/assets/listings.css?body=1" for 138.238.233.11 at 2015-05-03 20:31:35 +0000
+
+
+Started GET "/assets/pages.css?body=1" for 138.238.233.11 at 2015-05-03 20:31:36 +0000
+
+
+Started GET "/assets/application.css?body=1" for 138.238.233.11 at 2015-05-03 20:31:36 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 138.238.233.11 at 2015-05-03 20:31:36 +0000
+
+
+Started GET "/assets/pages.js?body=1" for 138.238.233.11 at 2015-05-03 20:31:36 +0000
+
+
+Started GET "/assets/listings.js?body=1" for 138.238.233.11 at 2015-05-03 20:31:36 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 138.238.233.11 at 2015-05-03 20:31:36 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 138.238.233.11 at 2015-05-03 20:31:36 +0000
+
+
+Started GET "/assets/application.js?body=1" for 138.238.233.11 at 2015-05-03 20:31:36 +0000
+
+
+Started GET "/" for 138.238.233.11 at 2015-05-03 20:31:42 +0000
+Processing by ListingsController#index as HTML
+  [1m[35mListing Load (0.3ms)[0m  SELECT "listings".* FROM "listings"
+  Rendered listings/index.html.erb within layouts/application (12.9ms)
+  Rendered layouts/_navbar.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 86ms (Views: 84.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/pages.css?body=1" for 138.238.233.11 at 2015-05-03 20:31:43 +0000
+
+
+Started GET "/assets/listings.css?body=1" for 138.238.233.11 at 2015-05-03 20:31:43 +0000
+
+
+Started GET "/assets/custom.css?body=1" for 138.238.233.11 at 2015-05-03 20:31:43 +0000
+
+
+Started GET "/assets/application.css?body=1" for 138.238.233.11 at 2015-05-03 20:31:43 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 138.238.233.11 at 2015-05-03 20:31:43 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 138.238.233.11 at 2015-05-03 20:31:43 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 138.238.233.11 at 2015-05-03 20:31:43 +0000
+
+
+Started GET "/assets/listings.js?body=1" for 138.238.233.11 at 2015-05-03 20:31:43 +0000
+
+
+Started GET "/assets/application.js?body=1" for 138.238.233.11 at 2015-05-03 20:31:43 +0000
+
+
+Started GET "/assets/pages.js?body=1" for 138.238.233.11 at 2015-05-03 20:31:43 +0000
+
+
+Started GET "/" for 138.238.233.11 at 2015-05-03 20:33:55 +0000
+Processing by ListingsController#index as HTML
+  [1m[36mListing Load (0.3ms)[0m  [1mSELECT "listings".* FROM "listings"[0m
+  Rendered listings/index.html.erb within layouts/application (8.5ms)
+  Rendered layouts/_navbar.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 96ms (Views: 94.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/custom.css?body=1" for 138.238.233.11 at 2015-05-03 20:33:55 +0000
+
+
+Started GET "/assets/listings.css?body=1" for 138.238.233.11 at 2015-05-03 20:33:55 +0000
+
+
+Started GET "/assets/pages.css?body=1" for 138.238.233.11 at 2015-05-03 20:33:55 +0000
+
+
+Started GET "/assets/application.css?body=1" for 138.238.233.11 at 2015-05-03 20:33:55 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 138.238.233.11 at 2015-05-03 20:33:55 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 138.238.233.11 at 2015-05-03 20:33:55 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 138.238.233.11 at 2015-05-03 20:33:55 +0000
+
+
+Started GET "/assets/listings.js?body=1" for 138.238.233.11 at 2015-05-03 20:33:55 +0000
+
+
+Started GET "/assets/pages.js?body=1" for 138.238.233.11 at 2015-05-03 20:33:55 +0000
+
+
+Started GET "/assets/application.js?body=1" for 138.238.233.11 at 2015-05-03 20:33:55 +0000
+
+
+Started GET "/" for 138.238.233.11 at 2015-05-03 20:35:36 +0000
+Processing by ListingsController#index as HTML
+  [1m[35mListing Load (0.2ms)[0m  SELECT "listings".* FROM "listings"
+  Rendered listings/index.html.erb within layouts/application (8.6ms)
+  Rendered layouts/_navbar.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 91ms (Views: 89.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/custom.css?body=1" for 138.238.233.11 at 2015-05-03 20:35:36 +0000
+
+
+Started GET "/assets/listings.css?body=1" for 138.238.233.11 at 2015-05-03 20:35:37 +0000
+
+
+Started GET "/assets/pages.css?body=1" for 138.238.233.11 at 2015-05-03 20:35:37 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 138.238.233.11 at 2015-05-03 20:35:37 +0000
+
+
+Started GET "/assets/application.css?body=1" for 138.238.233.11 at 2015-05-03 20:35:37 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 138.238.233.11 at 2015-05-03 20:35:37 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 138.238.233.11 at 2015-05-03 20:35:37 +0000
+
+
+Started GET "/assets/listings.js?body=1" for 138.238.233.11 at 2015-05-03 20:35:37 +0000
+
+
+Started GET "/assets/application.js?body=1" for 138.238.233.11 at 2015-05-03 20:35:37 +0000
+
+
+Started GET "/assets/pages.js?body=1" for 138.238.233.11 at 2015-05-03 20:35:37 +0000
+
+
+Started GET "/" for 138.238.233.11 at 2015-05-03 20:36:25 +0000
+Processing by ListingsController#index as HTML
+  [1m[36mListing Load (0.3ms)[0m  [1mSELECT "listings".* FROM "listings"[0m
+  Rendered listings/index.html.erb within layouts/application (9.5ms)
+  Rendered layouts/_navbar.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 74ms (Views: 72.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/custom.css?body=1" for 138.238.233.11 at 2015-05-03 20:36:25 +0000
+
+
+Started GET "/assets/application.css?body=1" for 138.238.233.11 at 2015-05-03 20:36:26 +0000
+
+
+Started GET "/assets/pages.css?body=1" for 138.238.233.11 at 2015-05-03 20:36:26 +0000
+
+
+Started GET "/assets/listings.css?body=1" for 138.238.233.11 at 2015-05-03 20:36:26 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 138.238.233.11 at 2015-05-03 20:36:26 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 138.238.233.11 at 2015-05-03 20:36:26 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 138.238.233.11 at 2015-05-03 20:36:26 +0000
+
+
+Started GET "/assets/listings.js?body=1" for 138.238.233.11 at 2015-05-03 20:36:26 +0000
+
+
+Started GET "/assets/pages.js?body=1" for 138.238.233.11 at 2015-05-03 20:36:26 +0000
+
+
+Started GET "/assets/application.js?body=1" for 138.238.233.11 at 2015-05-03 20:36:26 +0000
+
+
+Started GET "/" for 138.238.233.11 at 2015-05-03 20:36:53 +0000
+Processing by ListingsController#index as HTML
+  [1m[35mListing Load (0.3ms)[0m  SELECT "listings".* FROM "listings"
+  Rendered listings/index.html.erb within layouts/application (8.7ms)
+  Rendered layouts/_navbar.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 64ms (Views: 62.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/custom.css?body=1" for 138.238.233.11 at 2015-05-03 20:36:54 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 138.238.233.11 at 2015-05-03 20:36:54 +0000
+
+
+Started GET "/assets/listings.css?body=1" for 138.238.233.11 at 2015-05-03 20:36:54 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 138.238.233.11 at 2015-05-03 20:36:54 +0000
+
+
+Started GET "/assets/application.css?body=1" for 138.238.233.11 at 2015-05-03 20:36:54 +0000
+
+
+Started GET "/assets/pages.css?body=1" for 138.238.233.11 at 2015-05-03 20:36:54 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 138.238.233.11 at 2015-05-03 20:36:54 +0000
+
+
+Started GET "/assets/listings.js?body=1" for 138.238.233.11 at 2015-05-03 20:36:54 +0000
+
+
+Started GET "/assets/pages.js?body=1" for 138.238.233.11 at 2015-05-03 20:36:54 +0000
+
+
+Started GET "/assets/application.js?body=1" for 138.238.233.11 at 2015-05-03 20:36:54 +0000
+
+
+Started GET "/" for 138.238.233.11 at 2015-05-03 20:37:26 +0000
+Processing by ListingsController#index as HTML
+  [1m[36mListing Load (0.3ms)[0m  [1mSELECT "listings".* FROM "listings"[0m
+  Rendered listings/index.html.erb within layouts/application (15.0ms)
+  Rendered layouts/_navbar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 70ms (Views: 69.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/custom.css?body=1" for 138.238.233.11 at 2015-05-03 20:37:27 +0000
+
+
+Started GET "/assets/listings.css?body=1" for 138.238.233.11 at 2015-05-03 20:37:27 +0000
+
+
+Started GET "/assets/pages.css?body=1" for 138.238.233.11 at 2015-05-03 20:37:27 +0000
+
+
+Started GET "/assets/application.css?body=1" for 138.238.233.11 at 2015-05-03 20:37:27 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 138.238.233.11 at 2015-05-03 20:37:27 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 138.238.233.11 at 2015-05-03 20:37:27 +0000
+
+
+Started GET "/assets/listings.js?body=1" for 138.238.233.11 at 2015-05-03 20:37:27 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 138.238.233.11 at 2015-05-03 20:37:27 +0000
+
+
+Started GET "/assets/pages.js?body=1" for 138.238.233.11 at 2015-05-03 20:37:27 +0000
+
+
+Started GET "/assets/application.js?body=1" for 138.238.233.11 at 2015-05-03 20:37:27 +0000
+
+
+Started GET "/" for 138.238.233.11 at 2015-05-03 20:40:04 +0000
+Processing by ListingsController#index as HTML
+  [1m[35mListing Load (0.3ms)[0m  SELECT "listings".* FROM "listings"
+  Rendered listings/index.html.erb within layouts/application (7.9ms)
+  Rendered layouts/_navbar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 89ms (Views: 88.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/custom.css?body=1" for 138.238.233.11 at 2015-05-03 20:40:04 +0000
+
+
+Started GET "/assets/listings.css?body=1" for 138.238.233.11 at 2015-05-03 20:40:04 +0000
+
+
+Started GET "/assets/pages.css?body=1" for 138.238.233.11 at 2015-05-03 20:40:04 +0000
+
+
+Started GET "/assets/application.css?body=1" for 138.238.233.11 at 2015-05-03 20:40:04 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 138.238.233.11 at 2015-05-03 20:40:04 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 138.238.233.11 at 2015-05-03 20:40:04 +0000
+
+
+Started GET "/assets/listings.js?body=1" for 138.238.233.11 at 2015-05-03 20:40:04 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 138.238.233.11 at 2015-05-03 20:40:04 +0000
+
+
+Started GET "/assets/application.js?body=1" for 138.238.233.11 at 2015-05-03 20:40:04 +0000
+
+
+Started GET "/assets/pages.js?body=1" for 138.238.233.11 at 2015-05-03 20:40:04 +0000
+
+
+Started GET "/" for 138.238.233.11 at 2015-05-03 20:43:04 +0000
+Processing by ListingsController#index as HTML
+  [1m[36mListing Load (0.3ms)[0m  [1mSELECT "listings".* FROM "listings"[0m
+  Rendered listings/index.html.erb within layouts/application (9.5ms)
+  Rendered layouts/_navbar.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 93ms (Views: 91.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/custom.css?body=1" for 138.238.233.11 at 2015-05-03 20:43:04 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 138.238.233.11 at 2015-05-03 20:43:04 +0000
+
+
+Started GET "/assets/application.css?body=1" for 138.238.233.11 at 2015-05-03 20:43:04 +0000
+
+
+Started GET "/assets/pages.css?body=1" for 138.238.233.11 at 2015-05-03 20:43:04 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 138.238.233.11 at 2015-05-03 20:43:04 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 138.238.233.11 at 2015-05-03 20:43:04 +0000
+
+
+Started GET "/assets/listings.css?body=1" for 138.238.233.11 at 2015-05-03 20:43:04 +0000
+
+
+Started GET "/assets/listings.js?body=1" for 138.238.233.11 at 2015-05-03 20:43:04 +0000
+
+
+Started GET "/assets/application.js?body=1" for 138.238.233.11 at 2015-05-03 20:43:04 +0000
+
+
+Started GET "/assets/pages.js?body=1" for 138.238.233.11 at 2015-05-03 20:43:04 +0000
+
+
+Started GET "/listings/1" for 138.238.233.11 at 2015-05-03 20:43:09 +0000
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mListing Load (0.2ms)[0m  SELECT  "listings".* FROM "listings"  WHERE "listings"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered listings/show.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_navbar.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 64ms (Views: 62.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 138.238.233.11 at 2015-05-03 20:44:05 +0000
+Processing by ListingsController#index as HTML
+  [1m[36mListing Load (0.3ms)[0m  [1mSELECT "listings".* FROM "listings"[0m
+  Rendered listings/index.html.erb within layouts/application (9.2ms)
+  Rendered layouts/_navbar.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 74ms (Views: 67.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/listings.css?body=1" for 138.238.233.11 at 2015-05-03 20:44:05 +0000
+
+
+Started GET "/assets/pages.css?body=1" for 138.238.233.11 at 2015-05-03 20:44:05 +0000
+
+
+Started GET "/assets/custom.css?body=1" for 138.238.233.11 at 2015-05-03 20:44:05 +0000
+
+
+Started GET "/assets/application.css?body=1" for 138.238.233.11 at 2015-05-03 20:44:05 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 138.238.233.11 at 2015-05-03 20:44:05 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 138.238.233.11 at 2015-05-03 20:44:05 +0000
+
+
+Started GET "/assets/listings.js?body=1" for 138.238.233.11 at 2015-05-03 20:44:05 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 138.238.233.11 at 2015-05-03 20:44:05 +0000
+
+
+Started GET "/assets/pages.js?body=1" for 138.238.233.11 at 2015-05-03 20:44:05 +0000
+
+
+Started GET "/assets/application.js?body=1" for 138.238.233.11 at 2015-05-03 20:44:05 +0000
+
+
+Started GET "/listings/1" for 138.238.233.11 at 2015-05-03 20:44:07 +0000
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mListing Load (0.2ms)[0m  SELECT  "listings".* FROM "listings"  WHERE "listings"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered listings/show.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_navbar.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 66ms (Views: 64.3ms | ActiveRecord: 0.2ms)
